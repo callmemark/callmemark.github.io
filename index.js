@@ -1,5 +1,4 @@
 new WOW().init();
-//alert("WEB UNDER DEVELOPMENT, BUT FEEL FREE TO LOOK ")
 
 
 const about = document.querySelector("#about")

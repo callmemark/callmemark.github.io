@@ -11,7 +11,6 @@ html, body{
 	overflow-x: hidden;
 }
 
-
 #page1{
 	background: #242424;
 	color: #e6e3e3;
@@ -157,6 +156,47 @@ html, body{
 }
 #python_skills{
 	padding-top: 10%;
+}
+
+
+.page5{
+	background: #e6e3e3;
+	color: #242424;	
+	padding-bottom: 5%;
+}
+#page5_paper{
+	background: #e6e3e3;
+	color: #242424;
+	box-shadow: 0 5px 15px #bababa;
+	margin: 5% 5% 0 5%;
+}
+#about_title{
+	text-align: center;
+	font-weight: bolder;
+	font-size: 200%;
+	padding-top: 5%;
+}
+#profile_image{
+	background-image: url("images/profile.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 420px;
+}
+#my_name{
+	font-size: 140%;
+	font-weight: bold;
+	padding: 20% 0 0 10%;
+}
+#profile_bio{
+	text-align: justify;
+	padding: 5% 5% 0 5%;
+}
+
+
+
+section{
+	height:50vh
 }
 
 
