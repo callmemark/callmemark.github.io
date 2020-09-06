@@ -1,0 +1,213 @@
+html, body{
+	padding: 0%;
+	margin: 0%;
+	overflow-x: hidden;
+	cursor: default;
+	font-family: 'Roboto', sans-serif;
+}
+.page{
+	height: 100vh;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+
+#page1{
+	background: #242424;
+	color: #e6e3e3;
+	padding: 10% 5%;
+	overflow-y: hidden;
+}
+#title{
+	font-size: 200%;
+	padding-top: 5%; 
+	font-weight: lighter;
+}
+#github_button{
+	width: 20%;
+}
+.col2_page1{
+	text-align: center;
+}
+.links{
+	text-align: left;
+	padding-top: 30%;
+}
+.nav_links{
+	margin-top: 20%;
+}
+.dev_type{
+	text-align: left;
+	font-weight: lighter;
+}
+
+
+#page2{
+	background: #e6e3e3;
+	color: #242424;
+	padding: 0 10% 7% 10%;
+}
+#title_bold{
+	font-size: 400%;
+	font-weight: bolder;
+}
+.icons{
+	width: 20%;
+	padding-top: 5%; 
+	opacity: 0;
+}
+#tools_title{
+	padding: 5% 0% 0% 0;
+	font-size: 250%;
+	text-align: center;
+	font-weight: bolder;
+}
+.long_card{
+	background:#e6e3e3;
+	text-align: center;
+}
+.graphs{
+	padding-top: 10%;
+}
+#overall_data_graphs{
+	padding: 10%;
+}
+
+
+
+.page3{
+	background: #242424;
+	color: #e6e3e3;
+	width: 100vw;
+	overflow-x: hidden;
+	padding: 5% 0 5% 0;
+}
+#web_dev_title{
+	font-weight: bolder;
+	font-size: 250%;
+	padding: 20% 0 0 0;
+}
+#web_dev_info{
+	padding: 10% 0 0 0; 
+	text-align: justify;
+}
+.image_card{
+	width: 350px;
+	height: 200px;
+	background: white;
+	position: relative;
+	box-shadow: 0 5px 5px #000000;
+}
+#image_card_1{
+	background-image: url("images/create.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#image_card_2{
+	z-index: 2;
+	background-image: url("images/program.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#image_card_3{
+	z-index: 2;
+	background: #e3e3e3;
+	background-image: url("images/deploy.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.web_dev_sample_card{
+	padding: 20% 0 0 20%;
+}
+#web_dev_small_text{
+	padding: 30% 0 0 10%;
+}
+
+
+.page4{
+	background: #e6e3e3;
+	color: #242424;
+	padding-bottom: 5%;
+}
+#python_title{
+	font-weight: bolder;
+	font-size: 250%;
+	padding: 20% 0 0 0;
+}
+#python_dev_info{
+	padding: 10% 0 0 0; 
+	text-align: justify;
+}
+#git_open_site{
+	text-align: center;
+}
+#relink_text{
+	font-size: 140%;
+	color: #555555;
+	padding: 10% 0 0% 0;
+}
+#small_github_logo{
+	width: 10%;
+}
+.python_skills{
+	font-size: 120%;
+	font-weight: bolder;
+	text-align: center;
+	padding-top: 10%;
+}
+#python_skills{
+	padding-top: 10%;
+}
+
+
+@media only screen and (max-width: 550px){
+	#tools_dougnut_graphs{
+		display: none;
+	}
+}
+
+
+@media only screen and (max-width: 720px){
+	#title{
+		font-size: 140%;
+	}
+	.dev_type{
+		text-align: center;
+		font-weight: lighter;
+	}
+	#title_bold{
+		font-size: 400%;
+		font-weight: bolder;
+	}
+	#web_dev_small_text{
+		padding: 30% 0 0 0;
+		text-align:  center;
+		font-size: 120%;
+	}
+	.web_dev_sample_card{
+	padding: 30% 0 0 5%;
+	}
+}
+
+
+@media only screen and (max-width: 1000px){
+	.page{
+		height: 100vh;
+		width: 100%;
+		overflow-x: scroll;
+	}
+	#title{
+		font-size: 140%;
+		padding-top: 5%; 
+		font-weight: lighter;
+		text-align: center;
+	}
+	.dev_type{
+		text-align: center;
+		font-weight: lighter;
+	}
+	#title_bold{
+		font-size: 200%;
+		font-weight: bolder;
+	}
+}
