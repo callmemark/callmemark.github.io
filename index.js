@@ -148,35 +148,27 @@ const all_borders = ["rgba(171, 171, 171, 1)",
 						"rgba(171, 171, 171, 1)",
 						"rgba(171, 171, 171, 1)"]	
 
+
 barGraph(overall_graph, all_data, all_labels, all_backgrounds, all_border_colors)
 polarAreaGraph(overall_chart, all_data, all_labels, all_backgrounds, all_borders)
 
 
-const scrollAnimation = (offset_val)=>{
-	const reveal = new WOW({
-		boxClass: "over_all_graphs",
-		offset: offset_val,
-		callback: function(){
-			html_icon.style.opacity = "1"
-			css_icon.style.opacity = "1"
-			js_icon.style.opacity = "1"
-			python_icon.style.opacity = "1"
-			dougnutGraph(python_graph_canvas, python_data, python_background_colors, python_border_color, python_label)
-			dougnutGraph(javascript_graph_canvas, js_data, js_background_colors, js_border_color, js_label)
-			dougnutGraph(css_graph_canvas, css_data, css_background_colors, css_border_color, css_label)
-			dougnutGraph(html_graph_canvas, html_data, html_background_colors, html_border_color, html_label)	
-		}
-	})
-	reveal.init();
-}
 
+const reveal = new WOW({
+	boxClass: "doughnut_graph_scroll_trigger",
+	offset: 0,
+	callback: function(){
+		html_icon.style.opacity = "1"
+		css_icon.style.opacity = "1"
+		js_icon.style.opacity = "1"
+		python_icon.style.opacity = "1"
+		dougnutGraph(python_graph_canvas, python_data, python_background_colors, python_border_color, python_label)
+		dougnutGraph(javascript_graph_canvas, js_data, js_background_colors, js_border_color, js_label)
+		dougnutGraph(css_graph_canvas, css_data, css_background_colors, css_border_color, css_label)
+		dougnutGraph(html_graph_canvas, html_data, html_background_colors, html_border_color, html_label)	
+	}
+})
 
-if (screen.width <= 700){
-	scrollAnimation(0)
-}
-else{
-	scrollAnimation(0)
-}
 
 web_dev_sample_card.onmouseover = ()=>{
 	anime({
@@ -196,7 +188,7 @@ web_dev_sample_card.onmouseout = ()=>{
 
 const webdev_card_reveal = new WOW({
 	boxClass: 'web_dev_sample_card',
-	mobile: false,
+	mobile: true,
 	callback: function(){
 		anime({
 			targets: "#image_card_2, #image_card_3",
@@ -214,4 +206,6 @@ const webdev_card_reveal = new WOW({
 	}
 })
 
+
+reveal.init();
 webdev_card_reveal.init()

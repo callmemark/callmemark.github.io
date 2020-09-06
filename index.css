@@ -5,6 +5,10 @@ html, body{
 	cursor: default;
 	font-family: 'Roboto', sans-serif;
 }
+a{
+	text-decoration: none;
+}
+
 .page{
 	height: 100vh;
 	width: 100%;
@@ -74,7 +78,7 @@ html, body{
 
 
 
-.page3{
+#page3{
 	background: #242424;
 	color: #e6e3e3;
 	width: 100vw;
@@ -123,7 +127,7 @@ html, body{
 }
 
 
-.page4{
+#page4{
 	background: #e6e3e3;
 	color: #242424;
 	padding-bottom: 5%;
@@ -159,7 +163,7 @@ html, body{
 }
 
 
-.page5{
+#page5{
 	background: #e6e3e3;
 	color: #242424;	
 	padding-bottom: 5%;
@@ -195,9 +199,21 @@ html, body{
 
 
 
-section{
-	height:50vh
+footer{
+	background: #242424;
+	padding: 10% 5%;
+	text-align: center;
+	color: #e6e3e3;
 }
+.footer_link{
+	color: #e6e3e3;
+}
+#github_footer{
+	width: 15%;
+}
+
+
+
 
 
 @media only screen and (max-width: 550px){
