@@ -20,6 +20,7 @@ const web_dev_sample_card = document.querySelector(".web_dev_sample_card")
 const image_card_1 = document.querySelector("#image_card_1")
 const image_card_2 = document.querySelector("#image_card_2")
 const image_card_3 = document.querySelector("#image_card_3")
+const more_about_btn = document.querySelector("#more_about_btn")
 
 
 const openPage = (element, link)=>{
@@ -37,6 +38,7 @@ openPage(contact, stand_by)
 openPage(repo, "https://github.com/callmemark")
 openPage(aiWebsite, "http://projectai.epizy.com/")
 openPage(github_button, "https://github.com/callmemark")
+openPage(more_about_btn, "subpages/about.html")
 
 
 
@@ -81,7 +83,7 @@ const barGraph = (element, data_set, labels, background_color, border_color)=>{
 	    data: {
 	        labels: labels,
 	        datasets: [{
-	            label: "GOAL",
+	            label: labels,
 	            data: data_set,
 	            backgroundColor: background_color,
 	            borderColor: border_color,
