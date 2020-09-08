@@ -212,6 +212,7 @@ a:active {
 	background-image: url("images/profile.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
 }
 #my_name{
 	font-size: 140%;
@@ -274,7 +275,11 @@ footer{
 		font-size: 120%;
 	}
 	.web_dev_sample_card{
-	padding: 30% 0 0 5%;
+		padding: 30% 0 0 5%;
+	}
+	#profile_image{
+		height: 60vh;
+		width: 100vw;
 	}
 }
 
