@@ -13,7 +13,25 @@
 	
 	<title>I am Mark</title>
 </head>
-<body>
+<body onload="loading_func()">
+	<div id = "loader">
+		<div id = "load_text">
+			<style type="text/css">
+				.load_letter{
+					display: inline-block;
+				}
+			</style>
+			<p id = "letter_l" class = "load_letter">L</p>
+			<p id = "letter_o" class = "load_letter">O</p>
+			<p id = "letter_a" class = "load_letter">A</p>
+			<p id = "letter_d" class = "load_letter">D</p>
+			<p id = "letter_i" class = "load_letter">I</p>
+			<p id = "letter_n" class = "load_letter">N</p>
+			<p id = "letter_g" class = "load_letter">G</p>
+			<br>
+		</div>
+	</div>
+
 	<div id = "page1">
 		<div class = "container">
 			<div class = "row">
@@ -35,7 +53,7 @@
 					<div class = "container nav_links">
 						<div class = "row">
 							<div class = "col-sm" id = "about">
-								ABOUT
+								<a href = "#about_title">ABOUT</a>
 							</div>
 							<div class = "col-sm" id = "contact">
 								CONTACT
@@ -91,9 +109,16 @@
 				<div class = "col-md overall_graph d-flex justify-content-center">
 					<canvas id="overall_chart" class = "graphs" width="100" height="100"></canvas>
 				</div>
+
+				<div class = "col-md" id = "graph_definition">
+					<h4>Graph means</h4>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididuntut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis nostrud exercitationullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velitesse cillum dolore eu fugiat nulla pariatur. 
+				</div>
+
 				<div class = "col-md overall_graph d-flex justify-content-center">
 					<canvas id = "overall_graph" class = "graphs" width="100" height="100"></canvas>
 				</div>
+
 			</div>
 		</div>
 	</div>
@@ -203,7 +228,9 @@
 					<br>
 					<a href = "index.html" class = "footer_link">Repositories</a>
 					<br>
-					<a href = "index.html" class = "footer_link">AI</a>
+					<a href = "http://projectai.epizy.com/" class = "footer_link">AI</a>
+					<br>
+					<a href = "#title" class = "footer_link">BACK TO TOP</a>
 					<br> <br> <br> <br>
 					<p id = "email_footer">Email me on Gmail:
 						<br>

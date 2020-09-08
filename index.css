@@ -4,9 +4,32 @@ html, body{
 	overflow-x: hidden;
 	cursor: default;
 	font-family: 'Roboto', sans-serif;
+	scroll-behavior: smooth;
 }
-a{
-	text-decoration: none;
+a:link {
+  color: #e6e3e3;
+}
+a:visited {
+  color: #e6e3e3;
+}
+a:active {
+  color: #e6e3e3;
+}
+
+#loader{
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	z-index: 10;
+	text-align: center;
+	background: #242424;
+	color: #e6e3e3;
+}
+
+#load_text{
+	font-size: 200%;
+	font-weight: bolder;
+	padding-top: 20%;
 }
 
 .page{
@@ -73,7 +96,11 @@ a{
 	padding-top: 10%;
 }
 #overall_data_graphs{
-	padding: 10%;
+	padding: 5%;
+}
+#graph_definition{
+	text-align: justify;
+	padding-top: 3%;
 }
 
 
@@ -154,9 +181,10 @@ a{
 }
 .python_skills{
 	font-size: 120%;
-	font-weight: bolder;
+	font-weight: bold;
 	text-align: center;
 	padding-top: 10%;
+	color: #4a4a4a;
 }
 #python_skills{
 	padding-top: 10%;
@@ -169,7 +197,7 @@ a{
 	padding-bottom: 5%;
 }
 #page5_paper{
-	background: #e6e3e3;
+	background: #e3dede;
 	color: #242424;
 	box-shadow: 0 5px 15px #bababa;
 	margin: 5% 5% 0 5%;
@@ -183,14 +211,13 @@ a{
 #profile_image{
 	background-image: url("images/profile.jpg");
 	background-size: cover;
-	background-position: center;
 	background-repeat: no-repeat;
-	height: 420px;
 }
 #my_name{
 	font-size: 140%;
 	font-weight: bold;
-	padding: 20% 0 0 10%;
+	padding: 20% 0 0 5%;
+	color: #a6706d;
 }
 #profile_bio{
 	text-align: justify;
@@ -200,7 +227,7 @@ a{
 	text-align: center;
 	margin: 5% 5%;
 	padding: 2% 2%;
-	background: #242424;
+	background: #945451;
 	color: #e6e3e3;
 }
 
