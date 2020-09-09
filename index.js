@@ -1,4 +1,4 @@
-const loader = document.querySelector("#loader")
+const mainPage = document.querySelector("body")
 
 
 const letters = [
@@ -75,7 +75,7 @@ const loading_anim = ()=>{
 loading_anim()
 
 const loader_off = ()=>{
-	loader.style.display = "none"	
+	loader.style.display = "none"
 }
 
 const loading_func = ()=>{
@@ -88,8 +88,6 @@ const loading_func = ()=>{
 new WOW().init();
 
 
-const about = document.querySelector("#about")
-const contact = document.querySelector("#contact")
 const repo = document.querySelector("#repo")
 const aiWebsite = document.querySelector("#aiWebsite")
 const html_graph_canvas = document.querySelector("#html_chart")
@@ -109,7 +107,6 @@ const image_card_2 = document.querySelector("#image_card_2")
 const image_card_3 = document.querySelector("#image_card_3")
 const more_about_btn = document.querySelector("#more_about_btn")
 
-
 const openPage = (element, link)=>{
 	element.onclick = ()=>{
 		window.open(link)
@@ -118,10 +115,6 @@ const openPage = (element, link)=>{
 	element.style.cursor =  "pointer";
 }
 
-const stand_by = null
-
-//openPage(about, "#about_title")
-openPage(contact, stand_by)
 openPage(repo, "https://github.com/callmemark")
 openPage(aiWebsite, "http://projectai.epizy.com/")
 openPage(github_button, "https://github.com/callmemark")
@@ -259,6 +252,32 @@ const reveal = new WOW({
 })
 
 
+
+new gridjs.Grid({
+  columns: ["langugae", "mastery"],
+  data: [
+    ["jS", "90%"],
+    ["python", "80%"],
+    ["css", "70%"],
+    ["html", "80%"],
+    ["goal", "100%"]
+  ],
+  style: {
+    th: {
+      'background-color': 'rgba(255, 71, 102, 1)',
+      color: '#e6e3e3',
+      'border-bottom': '3px solid #ccc',
+      'text-align': 'center'
+    },
+    td: {
+      'background-color': 'rgba(227, 227, 227, 1)',
+      color: '#242424',
+    }
+  }
+}).render(document.getElementById("graph_table"));
+
+
+
 web_dev_sample_card.onmouseover = ()=>{
 	anime({
 		targets: "#image_card_2, #image_card_3",
@@ -298,4 +317,28 @@ const webdev_card_reveal = new WOW({
 
 reveal.init();
 webdev_card_reveal.init()
+
+
+new gridjs.Grid({
+  columns: ["skill", "mastery"],
+  data: [
+    ["GUI programming", "86%"],
+    ["Data Manipulation", "80%"],
+    ["Data Visualisation", "90%"],
+    ["Artificial Intilligence", "67%"]
+  ],
+  style: {
+    th: {
+      'background-color': 'rgba(36, 36, 36, 1)',
+      color: '#e6e3e3',
+      'border-bottom': '3px solid #ccc',
+      'text-align': 'center'
+    },
+    td: {
+      'background-color': 'rgba(227, 227, 227, 1)',
+      color: '#242424',
+    }
+  }
+}).render(document.getElementById("python_table"));
+
 
