@@ -1,92 +1,4 @@
-const mainPage = document.querySelector("body")
-
-
-const letters = [
-	document.querySelector("#letter_l").innerHTML,
-	document.querySelector("#letter_o").innerHTML,
-	document.querySelector("#letter_a").innerHTML,
-	document.querySelector("#letter_d").innerHTML,
-	document.querySelector("#letter_i").innerHTML,
-	document.querySelector("#letter_n").innerHTML,
-	document.querySelector("#letter_n").innerHTML
-	]
-
-const loading_anim = ()=>{
-	anime({
-	  targets: "#letter_l",
-	  translateY: -50,
-	  direction: 'alternate',
-	  delay: 100,
-	  loop: true,
-	  easing: 'easeInOutSine'
-	});
-
-	anime({
-	  targets: "#letter_o",
-	  translateY: -50,
-	  direction: 'alternate',
-	  delay: 150,
-	  loop: true,
-	  easing: 'easeInOutSine'
-	});
-	anime({
-	  targets: "#letter_a",
-	  translateY: -50,
-	  direction: 'alternate',
-	  delay: 200,
-	  loop: true,
-	  easing: 'easeInOutSine'
-	});
-	anime({
-	  targets: "#letter_d",
-	  translateY: -50,
-	  direction: 'alternate',
-	  delay: 250,
-	  loop: true,
-	  easing: 'easeInOutSine'
-	});
-	anime({
-	  targets: "#letter_i",
-	  translateY: -50,
-	  direction: 'alternate',
-	  delay: 300,
-	  loop: true,
-	  easing: 'easeInOutSine'
-	});
-	anime({
-	  targets: "#letter_n",
-	  translateY: -50,
-	  direction: 'alternate',
-	  delay: 350,
-	  loop: true,
-	  easing: 'easeInOutSine'
-	});
-	anime({
-	  targets: "#letter_g",
-	  translateY: -50,
-	  direction: 'alternate',
-	  delay: 400,
-	  loop: true,
-	  easing: 'easeInOutSine'
-	});
-}
-
-
-loading_anim()
-
-const loader_off = ()=>{
-	loader.style.display = "none"
-}
-
-const loading_func = ()=>{
-	loader_off()
-	loading_anim()
-}
-
-
-
 new WOW().init();
-
 
 const repo = document.querySelector("#repo")
 const aiWebsite = document.querySelector("#aiWebsite")
@@ -184,27 +96,27 @@ const barGraph = (element, data_set, labels, background_color, border_color)=>{
 
 
 const html_data = [90, 20]
-const html_background_colors = ['rgba(255, 76, 36, 1)', 'rgba(224, 224, 224, 1)'] 
+const html_background_colors = ['rgba(255, 76, 36, .8)', 'rgba(224, 224, 224, 1)'] 
 const html_label = ["html Proficientcy", "goal"]
 const html_border_color = ['rgba(255, 47, 0, 1)', 'rgba(212, 212, 212, 1)']
  
 
 const css_data = [80, 20]
-const css_background_colors = ['rgba(3, 226, 255, 1)', 'rgba(224, 224, 224, 1)']
+const css_background_colors = ['rgba(3, 226, 255, .8)', 'rgba(224, 224, 224, 1)']
 const css_label = ["css Proficientcy", "goal"]
 const css_border_color = ['rgba(0, 198, 224, 1)', 'rgba(212, 212, 212, 1)']
 
 
 
 const js_data = [70, 40]
-const js_background_colors = ['rgba(255, 234, 0, 1)', 'rgba(224, 224, 224, 1)']
+const js_background_colors = ['rgba(255, 234, 0, .8)', 'rgba(224, 224, 224, 1)']
 const js_label = ["javascript Proficientcy", "goal"]
 const js_border_color = ['rgba(224, 206, 0, 1)', 'rgba(212, 212, 212, 1)']
 
 
 
 const python_data = [80, 20]
-const python_background_colors = ['rgba(92, 163, 255, 1)', 'rgba(224, 224, 224, 1)']
+const python_background_colors = ['rgba(92, 163, 255, .8)', 'rgba(224, 224, 224, 1)']
 const python_label = ["python Proficientcy", "goal"]
 const python_border_color = ['rgba(25, 125, 255, 1)', 'rgba(212, 212, 212, 1)']
 
@@ -252,7 +164,6 @@ const reveal = new WOW({
 })
 
 
-
 new gridjs.Grid({
   columns: ["langugae", "mastery"],
   data: [
@@ -275,7 +186,6 @@ new gridjs.Grid({
     }
   }
 }).render(document.getElementById("graph_table"));
-
 
 
 web_dev_sample_card.onmouseover = ()=>{
@@ -340,5 +250,3 @@ new gridjs.Grid({
     }
   }
 }).render(document.getElementById("python_table"));
-
-

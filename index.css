@@ -25,7 +25,7 @@ a{
 	z-index: 10;
 	text-align: center;
 	background: #242424;
-	color: #e6e3e3;
+	color: #03feec;
 }
 
 #load_text{
@@ -241,9 +241,9 @@ a{
 	color: #e6e3e3;
 }
 
-#contac_page{
+#contact_page{
 	text-align: center;
-	padding-top: 10%;
+	margin-top: 10%;
 }
 #contact_image{
 	background-image: url("images/cont_bg.jpg");
@@ -254,6 +254,9 @@ a{
 }
 #contact_title{
 	color: #0079db;
+}
+#contact_info{
+	text-align: center;
 }
 
 
@@ -303,6 +306,13 @@ footer{
 	#about_image{
 		height: 60vh;
 		width: 100vw;
+	}
+	#contact_page{
+		text-align: center;
+		margin-top: 30%;
+	}
+	#contact_image{
+		height: 30vh;
 	}
 }
 
