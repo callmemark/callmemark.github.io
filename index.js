@@ -167,10 +167,10 @@ const reveal = new WOW({
 new gridjs.Grid({
   columns: ["langugae", "mastery"],
   data: [
-    ["jS", "90%"],
+    ["jS", "70%"],
     ["python", "80%"],
-    ["css", "70%"],
-    ["html", "80%"],
+    ["css", "80%"],
+    ["html", "90%"],
     ["goal", "100%"]
   ],
   style: {
