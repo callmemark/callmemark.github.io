@@ -97,56 +97,57 @@ const barGraph = (element, data_set, labels, background_color, border_color)=>{
 }
 
 
-const html_data = [90, 20]
-const html_background_colors = ['rgba(255, 76, 36, .8)', 'rgba(224, 224, 224, 1)'] 
-const html_label = ["html Proficientcy", "goal"]
-const html_border_color = ['rgba(255, 47, 0, 1)', 'rgba(212, 212, 212, 1)']
+const cssschema = 'rgba(47, 146, 245, .7)';
+const htmlschema = 'rgba(245, 73, 47, .7)';
+const jsschema = 'rgba(245, 222, 47, .7)';
+const pythonschema = 'rgba(41, 88, 217, .7)';
+const goalschema = 'rgba(163, 163, 163, .7)';
+const goalborderschema =  'rgba(163, 163, 163, 1)';
+
+const html_data = [90, 20];
+const html_background_colors = [htmlschema, goalborderschema];
+const html_label = ["html Proficientcy", "goal"];
+const html_border_color = [htmlschema, goalborderschema];
  
 
-const css_data = [80, 20]
-const css_background_colors = ['rgba(3, 226, 255, .8)', 'rgba(224, 224, 224, 1)']
-const css_label = ["css Proficientcy", "goal"]
-const css_border_color = ['rgba(0, 198, 224, 1)', 'rgba(212, 212, 212, 1)']
+const css_data = [80, 20];
+const css_background_colors = [cssschema, goalborderschema];
+const css_label = ["css Proficientcy", "goal"];
+const css_border_color = [cssschema, goalborderschema];
 
 
 
-const js_data = [70, 40]
-const js_background_colors = ['rgba(255, 234, 0, .8)', 'rgba(224, 224, 224, 1)']
-const js_label = ["javascript Proficientcy", "goal"]
-const js_border_color = ['rgba(224, 206, 0, 1)', 'rgba(212, 212, 212, 1)']
-
+const js_data = [70, 40];
+const js_background_colors = [jsschema, goalborderschema];
+const js_label = ["javascript Proficientcy", "goal"];
+const js_border_color = [jsschema, goalborderschema];
 
 
 const python_data = [80, 20]
-const python_background_colors = ['rgba(92, 163, 255, .8)', 'rgba(224, 224, 224, 1)']
-const python_label = ["python Proficientcy", "goal"]
-const python_border_color = ['rgba(25, 125, 255, 1)', 'rgba(212, 212, 212, 1)']
+const python_background_colors = [pythonschema, goalborderschema];
+const python_label = ["python Proficientcy", "goal"];
+const python_border_color = [pythonschema, goalborderschema];
 
 
 
-const all_data = [100, 90, 80, 70, 80]
-const all_labels = ["goal", "css", "js", "python", "html"]
-const all_backgrounds = ['rgba(212, 212, 212, 1)',
-						'rgba(3, 226, 255, 1)', 
-						'rgba(255, 234, 0, 1)',
-						'rgba(92, 163, 255, 1)',
-						'rgba(255, 76, 36, 1)',]
+const all_data = [100, 90, 80, 70, 80];
+const all_labels = ["goal", "css", "js", "python", "html"];
+const all_backgrounds = [goalschema,
+						cssschema, 
+						jsschema,
+						pythonschema,
+						htmlschema,];
 
-const all_border_colors = ['rgba(212, 212, 212, .5)',
-							'rgba(0, 198, 224, .5)',
-							'rgba(224, 206, 0, .5)',
-							'rgba(25, 125, 255, .5)',
-							'rgba(255, 47, 0, .5)']
+const all_border_colors = ['rgba(66, 66, 66, .5)',
+							'rgba(66, 66, 66, .5)',
+							'rgba(66, 66, 66, .5)',
+							'rgba(66, 66, 66, .5)',
+							'rgba(66, 66, 66, .5)'];
 
-const all_borders = ["rgba(171, 171, 171, 1)",
-						"rgba(171, 171, 171, 1)",
-						"rgba(171, 171, 171, 1)",
-						"rgba(171, 171, 171, 1)",
-						"rgba(171, 171, 171, 1)"]	
 
 
 barGraph(overall_graph, all_data, all_labels, all_backgrounds, all_border_colors)
-polarAreaGraph(overall_chart, all_data, all_labels, all_backgrounds, all_borders)
+polarAreaGraph(overall_chart, all_data, all_labels, all_backgrounds, all_border_colors)
 
 
 
@@ -177,7 +178,7 @@ new gridjs.Grid({
   ],
   style: {
     th: {
-      'background-color': 'rgba(255, 71, 102, 1)',
+      'background-color': 'rgba(74, 74, 74, 1)',
       color: '#e6e3e3',
       'border-bottom': '3px solid #ccc',
       'text-align': 'center'

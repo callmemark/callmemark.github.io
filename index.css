@@ -75,7 +75,7 @@ a{
 	padding-top: 30%;
 }
 .nav_links{
-	margin: 10% 0 15% 0;
+	margin: 10% 0 20% 0;
 	font-weight: lighter;
 }
 
@@ -202,7 +202,7 @@ a{
 	color: #4a4a4a;
 }
 #python_skills{
-	padding-top: 10%;
+	padding-top: 15%;
 }
 
 
@@ -268,7 +268,9 @@ a{
 #contact_info{
 	text-align: center;
 }
-
+#contactpage{
+	padding: 5% 0 10% 0 ;
+}
 
 
 footer{
