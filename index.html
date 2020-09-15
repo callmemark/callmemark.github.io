@@ -26,9 +26,9 @@
 			<style type="text/css">
 				.load_letter{
 					display: inline-block;
-					color: #ff2e51;
 				}
 			</style>
+
 			<p id = "letter_l" class = "load_letter">L</p>
 			<p id = "letter_o" class = "load_letter">O</p>
 			<p id = "letter_a" class = "load_letter">A</p>
@@ -51,27 +51,26 @@
 					
 				
 				</div>
-				<div class = "col-md col2_page1">
-					<img src = "images/github.png" id = "github_button">
-					<br><br>
-					<h4>My GitHub</h4>	
+				<div class = "col-md col2_page1"> 
 
-					<br>
-					<h6 class = "dev_type">Software Developer</h6>
-					<h6 class = "dev_type">Front-end Web Developer</h6>
+					<img src = "images/profileimage.jpg" id = "github_button">
+					<p id = "qoute">Lets <span style = "font-weight: bold"> BUILD</span> Something
+					<br> <span style = "font-weight: bold">AWESOME!</span></p>
+					<br><br>
+					
 
 					<div class = "container nav_links">
 						<div class = "row">
-							<div class = "col-sm" id = "about">
-								<a href = "#about_title">ABOUT</a>
+							<div class = "col-sm-3" id = "about">
+								<a href = "#about_title">ABOUT ME</a>
 							</div>
-							<div class = "col-sm" id = "contact">
+							<div class = "col-sm-3" id = "contact">
 								<a href = "#contact_image">CONTACT</a>
 							</div>
-							<div class = "col-sm" id = "repo">
+							<div class = "col-sm-3" id = "repo">
 								REPOSITOREIS
 							</div>
-							<div class = "col-sm" id = "aiWebsite">
+							<div class = "col-sm-3" id = "aiWebsite">
 								AI-S
 							</div>
 						</div>
@@ -85,29 +84,29 @@
 		<div class = "container">
 			<div class = "row">
 				<div class = "col-sm d-flex justify-content-center">
-					<p id = "tools_title">Tools</p>
+					<p id = "tools_title">I work with,</p>
 				</div>
 			</div>
 			<div class = "row doughnut_graph_scroll_trigger"  id = "tools_dougnut_graphs">
-				<div class = "col-sm d-flex justify-content-center html">
+				<div class = "col-sm-3 d-flex justify-content-center html">
 					<div class = "long_card">
 						<img src = "images/html.png" class = "icons" id = "html_icon">
 						<canvas id="html_chart" class = "graphs" width="200" height="200"></canvas>
 					</div>
 				</div>
-				<div class = "col-sm d-flex justify-content-center">
+				<div class = "col-sm-3 d-flex justify-content-center">
 					<div class = "long_card">
 						<img src = "images/css.png" class = "icons" id = "css_icon">
 						<canvas id="css_chart" class = "graphs" width="200" height="200"></canvas>
 					</div>
 				</div>
-				<div class = "col-sm d-flex justify-content-center">
+				<div class = "col-sm-3 d-flex justify-content-center">
 					<div class = "long_card">
 						<img src = "images/javascript.png" class = "icons" id = "js_icon">
 						<canvas id="javascript_chart" class = "graphs" width="200" height= "200"></canvas>
 					</div>
 				</div>
-				<div class = "col-md d-flex justify-content-center">
+				<div class = "col-sm-3 d-flex justify-content-center">
 					<div class = "long_card">
 						<img src = "images/python.png" class = "icons" id = "python_icon">
 						<canvas id="python_chart" class = "graphs" width="200" height="200"></canvas>
@@ -139,7 +138,7 @@
 		<div class = "container">
 			<div class = "row">
 				<div class = "col-sm-6">
-					<p id = "web_dev_title">Front-end Web Developer</p>
+					<p id = "web_dev_title" class = "web_dev_title">Front-end Web Developer</p>
 					<p id = "web_dev_info">
 						I am a front-end web developer. I use html, css to show visitor a beautiful, responsive meaning a beautiful website weather on small screens or on big screens. I use javascript to give visitors an interactive experience with the website. I have experience working with awesome libraries like anime js library and bootstrap to make websites much more beautiful and interactive in a short amount of time.
 					</p>
@@ -164,7 +163,7 @@
 		<div class = "container">
 			<div class = "row">
 				<div class = "col-sm-6">
-					<p id = "python_title">
+					<p id = "python_title" class = "python_title">
 						Python Developer
 					</p>
 
@@ -272,7 +271,6 @@
 
 
 		<script type="text/javascript" src = "js_codes\loading.js"></script>
-		<script type="text/javascript" src = "js_codes\scrollAnimations.js"></script>
 		<script type="text/javascript" src = "index.js"></script>
 	</body>
 </html>

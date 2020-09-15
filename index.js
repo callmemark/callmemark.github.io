@@ -1,23 +1,24 @@
 new WOW().init();
 
-const repo = document.querySelector("#repo")
-const aiWebsite = document.querySelector("#aiWebsite")
-const html_graph_canvas = document.querySelector("#html_chart")
-const css_graph_canvas = document.querySelector("#css_chart")
-const javascript_graph_canvas = document.querySelector("#javascript_chart")
-const python_graph_canvas = document.querySelector("#python_chart")
-const overall_chart = document.querySelector("#overall_chart")
-const overall_graph = document.querySelector("#overall_graph")
-const github_button = document.querySelector("#github_button")
-const html_icon = document.querySelector("#html_icon")
-const css_icon = document.querySelector("#css_icon")
-const js_icon = document.querySelector("#js_icon")
-const python_icon = document.querySelector("#python_icon")
-const web_dev_sample_card = document.querySelector(".web_dev_sample_card")
-const image_card_1 = document.querySelector("#image_card_1")
-const image_card_2 = document.querySelector("#image_card_2")
-const image_card_3 = document.querySelector("#image_card_3")
-const more_about_btn = document.querySelector("#more_about_btn")
+const repo = document.querySelector("#repo");
+const aiWebsite = document.querySelector("#aiWebsite");
+const html_graph_canvas = document.querySelector("#html_chart");
+const css_graph_canvas = document.querySelector("#css_chart");
+const javascript_graph_canvas = document.querySelector("#javascript_chart");
+const python_graph_canvas = document.querySelector("#python_chart");
+const overall_chart = document.querySelector("#overall_chart");
+const overall_graph = document.querySelector("#overall_graph");
+const github_button = document.querySelector("#github_button");
+const html_icon = document.querySelector("#html_icon");
+const css_icon = document.querySelector("#css_icon");
+const js_icon = document.querySelector("#js_icon");
+const python_icon = document.querySelector("#python_icon");
+const web_dev_sample_card = document.querySelector(".web_dev_sample_card");
+const image_card_1 = document.querySelector("#image_card_1");
+const image_card_2 = document.querySelector("#image_card_2");
+const image_card_3 = document.querySelector("#image_card_3");
+const more_about_btn = document.querySelector("#more_about_btn");
+const mygittext = document.querySelector("#mygittext");
 
 const openPage = (element, link)=>{
 	element.onclick = ()=>{
@@ -31,6 +32,7 @@ openPage(repo, "https://github.com/callmemark")
 openPage(aiWebsite, "http://projectai.epizy.com/")
 openPage(github_button, "https://github.com/callmemark")
 openPage(more_about_btn, "subpages/about.html")
+
 
 
 
@@ -225,9 +227,40 @@ const webdev_card_reveal = new WOW({
 })
 
 
+const frontend_title = new WOW({
+	boxClass: "web_dev_title",
+	mobile: true,
+	offset: 3,
+	callback: function(){
+		anime({
+			targets: ".web_dev_title",
+			translateX: 40,
+ 			easing: 'easeInOutQuad',
+ 			delay: 100
+		})
+	}
+})
+
+
+const python_title = new WOW({
+	boxClass: "python_title",
+	mobile: true,
+	offset: 3,
+	callback: function(){
+		anime({
+			targets: ".python_title",
+			translateX: 40,
+ 			easing: 'easeInOutQuad',
+ 			delay: 200
+		})
+	}
+})
+
+
 reveal.init();
 webdev_card_reveal.init()
-
+frontend_title.init()
+python_title.init()
 
 new gridjs.Grid({
   columns: ["skill", "mastery"],
