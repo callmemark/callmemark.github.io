@@ -28,12 +28,21 @@ a{
 	background: #242424;
 	color: #03feec;
 }
+#loaderparticles{
+	position: absolute;	
+	margin-top: -8%;
+	width: 100vw;
+	height: 100vh;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	z-index: 2;
+}
 
 #load_text{
 	font-size: 200%;
 	font-weight: bolder;
 	padding-top: 20%;
-	color: #7de1ff;
+	color: #ffda1f;
 }
 
 .page{
@@ -41,7 +50,14 @@ a{
 	width: 100%;
 	overflow-x: hidden;
 }
-
+#particles{
+	position: absolute;	
+	margin-top: -8%;
+	width: 90vw;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	z-index: 2;
+}
 #page1{
 	background: #242424;
 	color: #e6e3e3;
@@ -53,6 +69,7 @@ a{
 	padding-top: 5%; 
 	font-weight: lighter;
 	font-family: 'Lobster', cursive;
+	z-index: 1;
 }
 #github_button{
 	padding-top: 10%;
@@ -77,6 +94,8 @@ a{
 .nav_links{
 	margin: 10% 0 20% 0;
 	font-weight: lighter;
+	position: relative;
+	z-index: 3;
 }
 
 
@@ -298,6 +317,14 @@ footer{
 @media only screen and (max-width: 720px){
 	#title{
 		font-size: 140%;
+	}#particles{
+		position: absolute;	
+		margin-top: -8%;
+		width: 90vw;
+		height: 70vh;
+		overflow-y: hidden;
+		overflow-x: hidden;
+		z-index: 2;
 	}
 	.dev_type{
 		text-align: center;

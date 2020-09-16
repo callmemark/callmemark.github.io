@@ -17,11 +17,13 @@
 	<link rel="stylesheet" href="libs\WOW-master\css\libs\animate.css">
 	<script type="text/javascript" src = "libs\Chart.js\Chart.min.js"></script>
 	<script type="text/javascript" src = "libs\anime.min.js"></script>
+	<script type="text/javascript" src="libs/particles.min.js"></script>
 	
 	<title>I am Mark</title>
 </head>
 <body onload = "loading_func()">
 	<div id = "loader">
+		<div id = "loaderparticles"></div>
 		<div id = "load_text">
 			<style type="text/css">
 				.load_letter{
@@ -43,6 +45,7 @@
 	<div id = "page1">
 		<div class = "container">
 			<div class = "row">
+				<div id = "particles"></div>
 				<div class = "col-md">
 					<p id = "title">
 						I AM </br><span id = "title_bold">M A R K</span></p>
@@ -89,25 +92,25 @@
 			</div>
 			<div class = "row doughnut_graph_scroll_trigger"  id = "tools_dougnut_graphs">
 				<div class = "col-sm-3 d-flex justify-content-center html">
-					<div class = "long_card">
+					<div class = "long_card"  id = "htmlcard">
 						<img src = "images/html.png" class = "icons" id = "html_icon">
 						<canvas id="html_chart" class = "graphs" width="200" height="200"></canvas>
 					</div>
 				</div>
 				<div class = "col-sm-3 d-flex justify-content-center">
-					<div class = "long_card">
+					<div class = "long_card" id = "csscard">
 						<img src = "images/css.png" class = "icons" id = "css_icon">
 						<canvas id="css_chart" class = "graphs" width="200" height="200"></canvas>
 					</div>
 				</div>
 				<div class = "col-sm-3 d-flex justify-content-center">
-					<div class = "long_card">
+					<div class = "long_card" id = "jscard">
 						<img src = "images/javascript.png" class = "icons" id = "js_icon">
 						<canvas id="javascript_chart" class = "graphs" width="200" height= "200"></canvas>
 					</div>
 				</div>
 				<div class = "col-sm-3 d-flex justify-content-center">
-					<div class = "long_card">
+					<div class = "long_card" id = "pythoncard">
 						<img src = "images/python.png" class = "icons" id = "python_icon">
 						<canvas id="python_chart" class = "graphs" width="200" height="200"></canvas>
 					</div>
