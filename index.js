@@ -17,7 +17,7 @@ const web_dev_sample_card = document.querySelector(".web_dev_sample_card");
 const image_card_1 = document.querySelector("#image_card_1");
 const image_card_2 = document.querySelector("#image_card_2");
 const image_card_3 = document.querySelector("#image_card_3");
-const more_about_btn = document.querySelector("#more_about_btn");
+// const more_about_btn = document.querySelector("#more_about_btn");
 const mygittext = document.querySelector("#mygittext");
 
 const openPage = (element, link)=>{
@@ -31,7 +31,8 @@ const openPage = (element, link)=>{
 openPage(repo, "https://github.com/callmemark")
 openPage(aiWebsite, "http://projectai.epizy.com/")
 openPage(github_button, "https://github.com/callmemark")
-openPage(more_about_btn, "subpages/about.html")
+
+// openPage(more_about_btn, "subpages/about.html")
 
 
 
