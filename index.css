@@ -3,7 +3,7 @@ html, body{
 	margin: 0%;
 	overflow-x: hidden;
 	cursor: default;
-	font-family: 'Work Sans', sans-serif;
+	/*font-family: 'Work Sans', sans-serif;*/
 	scroll-behavior: smooth;
 
 }
@@ -18,6 +18,10 @@ a:active {
 }
 a{
 	color: green;
+}
+p{
+	/*font-family: 'Noto Sans Mono', monospace;*/
+	font-family: 'Work Sans', sans-serif;
 }
 #loader{
 	height: 100vh;
@@ -43,6 +47,7 @@ a{
 	font-weight: bolder;
 	padding-top: 20%;
 	color: #ffda1f;
+
 }
 
 .page{
@@ -91,12 +96,24 @@ a{
 	text-align: left;
 	padding-top: 30%;
 }
+.callaction{
+	color: #ffffff;
+	font-weight: normal;
+	font-size: 110%;
+}
+.callaction:hover{
+	font-weight: bold;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 110%;
+}
 .nav_links{
 	margin: 10% 0 20% 0;
 	font-weight: lighter;
 	position: relative;
 	z-index: 3;
 }
+
 
 
 #page2{
@@ -225,18 +242,47 @@ a{
 }
 
 
+
 #page5{
-	background: #e6e3e3;
+	background: #F0AF82;
 	color: #242424;	
 	padding-bottom: 5%;
 }
 #page5_paper{
+	background: #F0AF82;
+	color: #242424;
+	box-shadow: 0 5px 15px #bababa;
+	margin: 5% 5% 0 5%;
+	padding: 2%;
+}
+#game_dev_info{
+	padding: 0 0 5% 0; 
+	text-align: justify;
+}
+#itch_link{
+	text-align: center;
+	color: #242424;
+	font-weight: bolder;
+	padding: 0 0 10% 0; 
+}
+
+
+
+#page6{
+	background: #e6e3e3;
+	color: #242424;	
+	padding-bottom: 5%;
+}
+
+#page6_paper{
 	background: #e3dede;
 	color: #242424;
 	box-shadow: 0 5px 15px #bababa;
 	margin: 5% 5% 0 5%;
 	padding: 2%;
 }
+
+
 #info_title{
 	text-align: center;
 	font-weight: bolder;

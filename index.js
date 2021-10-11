@@ -268,12 +268,14 @@ frontend_title.init()
 python_title.init()
 
 new gridjs.Grid({
-  columns: ["skill", "mastery"],
+  columns: ["Python libs iIused"],
   data: [
-    ["GUI programming", "86%"],
-    ["Data Manipulation", "80%"],
-    ["Data Visualisation", "90%"],
-    ["Artificial Intilligence", "67%"]
+    ["Pandas"],
+    ["OpenCV"],
+    ["Scikit-learn"],
+    ["Numpy"],
+    ["AStropy"],
+    ["And more..."]
   ],
   style: {
     th: {
@@ -285,6 +287,7 @@ new gridjs.Grid({
     td: {
       'background-color': 'rgba(227, 227, 227, 1)',
       color: '#242424',
+      'text-align': 'center'
     }
   }
 }).render(document.getElementById("python_table"));
